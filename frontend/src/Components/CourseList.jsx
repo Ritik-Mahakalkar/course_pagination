@@ -32,7 +32,6 @@ const CourseList = ({ courses, searchQuery = "", filterCategory = "" }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const coursesPerPage = 6;
 
-  // Filter logic
   const filteredCourses = courses.filter((course) => {
     const matchesSearch = course.title.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesFilter = filterCategory ? course.category === filterCategory : true;
@@ -43,7 +42,7 @@ const CourseList = ({ courses, searchQuery = "", filterCategory = "" }) => {
     setCurrentPage(1);
   }, [searchQuery, filterCategory]);
 
-  // Pagination
+ 
   const indexOfLast = currentPage * coursesPerPage;
   const indexOfFirst = indexOfLast - coursesPerPage;
   const currentCourses = filteredCourses.slice(indexOfFirst, indexOfLast);
