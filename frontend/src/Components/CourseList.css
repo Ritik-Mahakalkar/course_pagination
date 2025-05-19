@@ -1,4 +1,4 @@
-/* CourseList.css */
+
 
 body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -63,7 +63,7 @@ body {
   text-shadow: 0 0 5px #00ffcc;
 }
 
-/* Pagination Styling */
+
 .pagination {
   display: flex;
   justify-content: center;
